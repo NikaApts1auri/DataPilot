@@ -6,19 +6,19 @@ import ThemeToggle from "./ThemeToggle";
 const navLinks = [
   { href: "#features", label: "Features", icon: Zap },
   { href: "#pricing", label: "Pricing", icon: ShieldCheck },
-  { href: "#about", label: "About Us", icon: Users },
+  { href: "#about", label: "About", icon: Users },
   { href: "#blog", label: "Blog", icon: BookOpen },
   { href: "#contact", label: "Contact", icon: Mail },
 ];
 
 const DesktopNav = () => {
   return (
-    <nav className="hidden lg:flex items-center gap-6">
+    <nav className="hidden md:flex  items-center gap-6">
       {navLinks.map((link) => (
         <a
           key={link.href}
           href={link.href}
-          className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors flex items-center text-base"
+          className="text-gray-700  dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors flex items-center text-base"
         >
           <link.icon className="mr-1.5 w-4 h-4" />
           {link.label}

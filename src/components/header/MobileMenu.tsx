@@ -10,7 +10,7 @@ import {
 import { useEffect, useRef } from "react";
 import { Button } from "../ui/button";
 import { cn } from "../../lib/utils";
-import ThemeToggle from "./ThemeToggle";
+// import ThemeToggle from "./ThemeToggle";
 import useScrollToBottom from "../hooks/useScrollToBottom";
 
 interface MobileMenuProps {
@@ -91,7 +91,7 @@ const MobileMenu = ({ isMenuOpen, toggleMenu }: MobileMenuProps) => {
           ))}
 
           <div className="pt-4 border-t border-gray-700 flex items-center justify-between">
-            <ThemeToggle />
+            {/* <ThemeToggle /> */}
           </div>
 
           <Button

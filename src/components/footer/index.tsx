@@ -4,9 +4,9 @@ import { faqItems } from "./faqItems";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-800 py-10">
+    <footer className="  bg-gray-100  dark:bg-gray-800 py-10">
       <div className="container mx-auto px-4">
-        {/* Header Section */}
+        
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
           <div className="text-center md:text-left">
             <h2 className="text-3xl font-bold text-gray-800 dark:text-gray-200">
@@ -17,7 +17,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Navigation Links */}
+
           <div className="flex flex-wrap justify-center md:justify-end gap-6">
             <a
               href="#features"
@@ -46,7 +46,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* FAQ Section */}
+   
         <div className="mt-10">
           <h3 className="text-xl font-semibold text-gray-800 dark:text-gray-200 mb-4">
             Frequently Asked Questions
@@ -54,7 +54,7 @@ const Footer = () => {
           <FaqAccordion items={faqItems} />
         </div>
 
-        {/* Newsletter Subscription */}
+       
         <div className="mt-8">
           <h3 className="text-lg font-semibold text-gray-800 dark:text-gray-200 text-center">
             Subscribe to our Newsletter
@@ -74,14 +74,14 @@ const Footer = () => {
             />
             <button
               type="submit"
-              className="p-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition-colors"
+              className="p-2 bg-blue-500 text-white cursor-pointer rounded-md hover:bg-blue-600 transition-colors"
             >
               Subscribe
             </button>
           </form>
         </div>
 
-        {/* Social Media Links */}
+        
         <div className="mt-10 flex justify-center space-x-6">
           <a
             href="https://facebook.com"
@@ -103,7 +103,7 @@ const Footer = () => {
             href="https://github.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+            className="text-gray-700 dark:text-gray-300  hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
           >
             <FaGithub size={24} />
           </a>
@@ -111,13 +111,13 @@ const Footer = () => {
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+            className="text-gray-700 dark:text-gray-300  hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
           >
             <FaInstagram size={24} />
           </a>
         </div>
 
-        {/* Footer Bottom */}
+       
         <div className="mt-10 text-center text-gray-600 dark:text-gray-400">
           <p>&copy; {new Date().getFullYear()} DataPilot. All rights reserved.</p>
         </div>

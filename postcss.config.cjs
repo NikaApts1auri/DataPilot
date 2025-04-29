@@ -1,10 +1,8 @@
 module.exports = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-};
-
-module.exports = {
-  plugins,
-};  
+    plugins: [
+      require('autoprefixer'),
+      require('postcss-nested'),
+      // სხვა პლაგინები
+    ]
+  };
+  

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ThemeToggle from "./ThemeToggle";
+// import ThemeToggle from "./ThemeToggle";
 import { Button } from "../ui/button";
 import { cn } from "../../lib/utils";
 import useScrollToBottom from "../hooks/useScrollToBottom";
@@ -31,7 +31,7 @@ const DesktopNav = () => {
       >
         Contact
       </Link>
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <Button
         className={cn(
           "cursor-pointer bg-blue-500/10 text-blue-600 hover:bg-blue-500/20 hover:text-blue-500",

@@ -1,6 +1,7 @@
 import { Rocket } from "lucide-react";
 import { cn } from "../../lib/utils";
 import { Button } from "../ui/button";
+import useScrollToBottom from "../hooks/useScrollToBottom";
 
 const HeroSection = () => {
   return (
@@ -20,6 +21,7 @@ const HeroSection = () => {
             "bg-blue-500 cursor-pointer hover:bg-blue-600 text-white px-8 py-3 rounded-full",
             "transition-colors duration-300 shadow-lg"
           )}
+          onClick={useScrollToBottom()}
         >
           Get Started - Demo
         </Button>

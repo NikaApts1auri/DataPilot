@@ -3,14 +3,12 @@ import { useState, useEffect } from "react";
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const restartIndex = 5; // გადატვირთვის ინდექსი (მეცხრე ელემენტი)
+  const restartIndex = 5;
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => {
       const nextIndex = prevIndex + 1;
-      return nextIndex > restartIndex
-        ? 0 // თუ შემდეგი ინდექსი მეცხრეზე მეტია, ვბრუნდებით თავში
-        : nextIndex;
+      return nextIndex > restartIndex ? 0 : nextIndex;
     });
   };
 
@@ -20,19 +18,16 @@ const Testimonials = () => {
     );
   };
 
-  // Auto scrolling (looping)
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => {
         const nextIndex = prevIndex + 1;
-        return nextIndex > restartIndex
-          ? 0 // თუ შემდეგი ინდექსი მეცხრეზე მეტია, ვბრუნდებით თავში
-          : nextIndex;
+        return nextIndex > restartIndex ? 0 : nextIndex;
       });
-    }, 3000); // 3 seconds interval for auto scrolling
+    }, 3000);
 
-    return () => clearInterval(intervalId); // Cleanup on component unmount
-  }, [restartIndex]); // დამოკიდებულება restartIndex-ზე, თუმცა აქ მისი შეცვლა მოსალოდნელი არაა
+    return () => clearInterval(intervalId);
+  }, [restartIndex]);
 
   return (
     <section className="py-20 bg-gray-50 dark:bg-gray-900 px-4 sm:px-6 md:px-32 lg:px-48">
@@ -42,13 +37,12 @@ const Testimonials = () => {
         </h2>
 
         <div className="relative overflow-hidden">
-          {/* Container for Testimonials */}
           <div
-            className="flex transition-transform duration-500 gap-8 lg:gap-16" // Added gap to separate items more on larger screens
+            className="flex transition-transform duration-500 gap-8 lg:gap-16"
             style={{
               transform: `translateX(-${
                 (currentIndex % testimonials.length) * (100 / 3)
-              }%)`, // Horizontal movement based on index with wrap-around effect
+              }%)`,
             }}
           >
             {testimonials.map((testimonial, index) => (
@@ -76,7 +70,6 @@ const Testimonials = () => {
             ))}
           </div>
 
-          {/* Left and Right Arrow */}
           <div
             className="absolute top-1/2 left-0 transform -translate-y-1/2 px-4 cursor-pointer"
             onClick={handlePrev}

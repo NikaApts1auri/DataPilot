@@ -23,7 +23,7 @@ const Pricing = () => {
           <p className="mt-4 text-lg text-gray-500 dark:text-gray-400">
             Find the perfect plan for your business growth
           </p>
-          <div className="mt-6  inline-flex rounded-md shadow">
+          <div className="mt-6 gap-[1rem] inline-flex rounded-md shadow">
             <button
               onClick={() => handleTogglePricing(true)}
               className={`inline-flex items-center cursor-pointer justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md ${

@@ -11,6 +11,7 @@ import { useEffect, useRef } from "react";
 import { Button } from "../ui/button";
 import { cn } from "../../lib/utils";
 import ThemeToggle from "./ThemeToggle";
+import useScrollToBottom from "../hooks/useScrollToBottom";
 
 interface MobileMenuProps {
   isMenuOpen: boolean;
@@ -27,6 +28,7 @@ const navLinks = [
 
 const MobileMenu = ({ isMenuOpen, toggleMenu }: MobileMenuProps) => {
   const menuRef = useRef<HTMLDivElement>(null);
+  const scrollToBottom = useScrollToBottom();
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
@@ -97,7 +99,10 @@ const MobileMenu = ({ isMenuOpen, toggleMenu }: MobileMenuProps) => {
               "w-full mt-6 cursor-pointer w- bg-blue-500/10 text-blue-400 hover:bg-blue-500/20 hover:text-blue-300",
               "transition-colors duration-200 text-lg px-6 py-3 rounded-xl font-semibold"
             )}
-            onClick={toggleMenu}
+            onClick={() => {
+              toggleMenu();
+              scrollToBottom();
+            }}
           >
             Get Started
           </Button>

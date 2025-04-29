@@ -6,7 +6,7 @@ const ThemeToggle = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
   useEffect(() => {
-    // ცვლის რეჟიმს მონაცემებიდან localStorage
+   
     const savedTheme = localStorage.getItem("theme");
     if (savedTheme === "dark") {
       setIsDarkMode(true);
@@ -15,10 +15,10 @@ const ThemeToggle = () => {
       setIsDarkMode(false);
       document.documentElement.classList.remove("dark");
     }
-  }, []);
+  }, []); 
 
   const toggleTheme = () => {
-    setIsDarkMode((prev) => {
+    setIsDarkMode((prev: boolean) => {
       const newTheme = !prev;
       localStorage.setItem("theme", newTheme ? "dark" : "light");
       if (newTheme) {

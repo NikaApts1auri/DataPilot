@@ -9,7 +9,7 @@ const Testimonials = lazy(
 const Pricing = lazy(() => import("./components/pricing/Pricing"));
 
 const App = () => {
-  
+
   return (
     <Layout>
       <Hero />

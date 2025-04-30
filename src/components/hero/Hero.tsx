@@ -3,6 +3,7 @@ import { cn } from "../../lib/utils";
 import { Button } from "../ui/button";
 import useScrollToBottom from "../../hooks/useScrollToBottom";
 
+
 const HeroSection = () => {
   return (
     <section className="bg-gradient-to-br from-gray-900 to-gray-800 text-white py-20 md:py-32">

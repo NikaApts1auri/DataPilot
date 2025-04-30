@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# DataPilot Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+**DataPilot** is a fictional SaaS product, and this repository contains a responsive landing page created using **React**, **Tailwind CSS**, and **Vite**. The landing page highlights the key features of the product, showcases customer testimonials, presents pricing plans, and provides a footer with social media links. The page is fully responsive, ensuring it looks great on desktop, tablet, and mobile devices.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+You can view the live version of the landing page here: [DataPilot Live](https://data-pilot-q5mi.vercel.app/)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Table of Contents
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+1. [Technologies Used](#technologies-used)
+2. [Project Setup](#project-setup)
+3. [Project Structure](#project-structure)
+4. [Features](#features)
+5. [Responsive Design](#responsive-design)
+6. [Husky and Prettier Setup](#husky-and-prettier-setup)
+7. [License](#license)
+8. [Goals for Improvement](#goals-for-improvement)
+9. [Demo](#demo)
+10. [Resources](#resources)
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Technologies Used
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **React** – JavaScript library for building user interfaces.
+- **Tailwind CSS** – Utility-first CSS framework used for styling.
+- **Vite** – A fast build tool and development server.
+- **JavaScript (ES6+)** – Modern JavaScript for app functionality.
+- **TypeScript** – A superset of JavaScript, adding type safety.
+- **ESLint** & **Prettier** – For linting and code formatting.
+- **Husky** & **Lint-staged** – For pre-commit hooks ensuring that only properly linted and formatted code is committed.
+
+---
+
+## Project Setup
+
+Follow the steps below to set up the project locally:
+
+### 1. Clone the Repository:
+
+```bash
+git clone https://github.com/yourusername/DataPilot.git

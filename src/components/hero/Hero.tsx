@@ -1,7 +1,7 @@
 import { Rocket } from "lucide-react";
 import { cn } from "../../lib/utils";
 import { Button } from "../ui/button";
-import useScrollToBottom from "../hooks/useScrollToBottom";
+import useScrollToBottom from "../../hooks/useScrollToBottom";
 
 const HeroSection = () => {
   return (

@@ -143,13 +143,12 @@ See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## Demo
+## Demo 
 
 Here’s a preview of the landing page:
 
-![DataPilot Demo]([https://via.placeholder.com/1000x600.png?text=Landing+Page+Preview](https://data-pilot-q5mi.vercel.app/))
-
----
+Live URL  
+https://data-pilot-q5mi.vercel.app/
 
 ## Resources
 

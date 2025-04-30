@@ -43,3 +43,120 @@ Follow the steps below to set up the project locally:
 
 ```bash
 git clone https://github.com/yourusername/DataPilot.git
+cd DataPilot
+```
+
+### 2. Install Dependencies:
+
+```bash
+npm install
+```
+
+### 3. Start the Development Server:
+
+```bash
+npm run dev
+```
+
+### 4. Build for Production:
+
+```bash
+npm run build
+```
+
+### 5. Preview the Production Build:
+
+```bash
+npm run preview
+```
+
+---
+
+## Project Structure
+
+```
+src/
+├── assets/         # Images and static files
+├── components/     # Reusable UI components
+├── pages/          # Page sections like Hero, Features, Pricing, etc.
+├── App.tsx         # Root component
+└── main.tsx        # Entry point
+index.css       # Tailwind imports
+```
+
+---
+
+## Features
+
+- **Hero Section** – Visually appealing intro with product pitch
+- **Features Section** – Highlights core features of DataPilot
+- **Testimonials Section** – Displays customer feedback
+- **Pricing Section** – Clear pricing plans with CTAs
+- **Footer** – Contains social links and navigation
+
+---
+
+## Responsive Design
+
+The landing page is fully responsive and optimized for:
+
+- **Mobile** – `<640px`
+- **Tablet** – `640px – 1024px`
+- **Desktop** – `>1024px`
+
+---
+
+## Husky and Prettier Setup
+
+This project uses **Husky** and **Lint-staged** to maintain code quality:
+
+### 1. Install Husky
+
+```bash
+npx husky-init && npm install
+```
+
+### 2. Add Pre-commit Hook
+
+```bash
+npx husky add .husky/pre-commit "npx lint-staged"
+```
+
+This will automatically lint and format only staged files before each commit.
+
+---
+
+## License
+
+This project is licensed under the **MIT License**.\
+See the [LICENSE](LICENSE) file for details.
+
+---
+
+## Goals for Improvement
+
+- Add dark mode support
+- Add animations and transitions for better UI/UX
+- Integrate contact form functionality
+- Add unit and integration tests
+- Create a blog section
+
+---
+
+## Demo
+
+Here’s a preview of the landing page:
+
+![DataPilot Demo](https://via.placeholder.com/1000x600.png?text=Landing+Page+Preview)
+
+---
+
+## Resources
+
+- [React Documentation](https://reactjs.org/docs/getting-started.html)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [Vite Documentation](https://vitejs.dev/guide/)
+- [TypeScript Docs](https://www.typescriptlang.org/docs/)
+- [ESLint Docs](https://eslint.org/docs/latest/)
+- [Prettier Docs](https://prettier.io/docs/en/index.html)
+
